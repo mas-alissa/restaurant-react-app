@@ -1,0 +1,923 @@
+@import url('https://fonts.googleapis.com/css2?family=Fruktur&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Irish+Grover&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Aref+Ruqaa:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital@1&display=swap');
+
+*{ 
+margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    background-color: brown;
+}
+
+.bgcolornavbtns{
+    background-color:goldenrod;
+  
+}
+
+#Monday,#Tuesday,#Wednesday,#Thursday,#Saturday,#Sunday{
+    animation-name: days;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+.zoomIn-img{
+    transition: all 0.5s;
+}
+.zoomIn-img:hover{
+    transform: scale(1.1,1.1);
+    
+}
+
+@keyframes days {
+    0% {border:2px solid black;
+        border-radius: 20px;
+        background-color: green;
+        padding:10px
+    }
+
+  100% {border:2px solid black;
+    border-radius: 20px;
+    padding:10px
+}
+}
+
+#Friday{
+    animation-name: freeday;
+    animation-duration: 2.5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes freeday {
+    0% {border:2px solid black;
+        border-radius: 20px;
+        background-color: red;
+        padding:10px
+    }
+
+  100% {border:2px solid black;
+    border-radius: 20px;
+    padding:10px
+}
+}
+
+.fontNavbarLinks{
+    font-family: 'Anton', sans-serif;
+    font-size: 25px;
+    border-radius: 15px 50px;
+    text-shadow: 0 0 5px white;
+    box-shadow: 0 0 10px black;
+    transition: all 0.5s;
+}
+.fontNavbarLinks:hover{
+    border-radius: 50px 15px;
+    box-shadow: 0 0 20px white;
+   
+}
+.custom-toggler{
+    background-color:lightcoral;
+    font-size: 30px;
+}
+
+.nav-item{
+    margin:0 40px;
+}
+
+.pos-relative{
+    position: relative;
+}
+.pg-pos-absolute{
+    position: absolute;
+    top:50%;
+    left:50%;
+    
+    transform: translate(-50%,-50%) rotate(-8deg);
+    
+}
+
+
+.img-style{
+    border-radius: 15px 30px;
+    box-shadow: 0 0 15px black;
+}
+
+
+.pargraf-footer{
+    font-family: 'Fruktur', cursive;
+
+
+}
+
+.paragraph-opening-hours{
+    margin:0;
+    padding:0;
+    font-family: 'Righteous', cursive;
+  
+    font-size: 18px;
+}
+
+.paragraph-right-footers{
+    font-family: 'Righteous', cursive;
+    
+    font-size: 18px;
+}
+.boxShadow-footer{
+    box-shadow: 0 0 15px black;
+}
+
+/* @media screen and (min-width:0px) {
+    .boxShadow-footer{
+        position: absolute;
+        left:0;
+        bottom: 0;
+    }
+} */
+
+.logo-facebook{
+    width:200px;
+    box-shadow: 0 0 10px black;
+    border-radius: 10px;
+}
+.logo-facebook:hover{
+    box-shadow: 0 0 10px maroon;
+}
+
+.positionRelative{
+    position: relative;
+}
+
+.hartStyle{
+    animation-name: hart;
+    animation-duration: 2s;
+    animation-iteration-count:infinite;
+    color:red;
+}
+
+@keyframes hart{
+    0%{
+        font-size:14px;
+        
+    }
+    25%{
+        font-size:16px;
+    }
+}
+.DayStatus{
+    position: absolute;
+    transform: rotate(-20deg);
+    color:green;
+    font-weight: 500;
+    font-size: 18px;
+    top:10px;
+    left:0px;
+    text-shadow: 0 0 2px black;
+    background-color: black;
+    border-radius: 10px;
+    
+}
+.DayStatusFriday{
+    position: absolute;
+    transform: rotate(-20deg);
+    color:red;
+    font-weight: 500;
+    font-size: 18px;
+    top:10px;
+    left:0px;
+    text-shadow: 0 0 2px black;
+    background-color: black;
+    border-radius: 10px;
+}
+
+/* material ui elements  */
+
+.textBox-section{
+    text-align: center;
+    
+}
+
+
+/* products style */
+.product-style{
+    text-align: center;
+    /* background-color: rgba(255, 127, 80, 0.315); */
+    font-family: 'Mochiy Pop P One', sans-serif;
+    height: 700px;
+    overflow: hidden;
+    /* padding-top: 10px; */
+}
+
+
+.btnStyle{
+    display: block;
+    margin:30px auto;
+    padding:15px;
+    border-radius: 10px;
+    background-color: darkred;
+    color:white;
+}
+
+.btnStyle:hover{
+    color:black;
+    box-shadow: 0 0 10px black;
+}
+
+.btn-min-plus-style{
+    width:25px;
+    margin:5px;
+    border:1px solid gray;
+    border-radius: 50%;
+    background-color: black;
+    color:white;
+    font-size: 18px;
+    font-weight: bold;
+    transition: all 0.5s;
+}
+.btn-min-plus-style:hover{
+    box-shadow: 0 0 10px white;
+    transform: scale(1.2,1.2);
+}
+
+.btn-remove-item{
+    background-color: black;
+    color:red;
+    border:1px solid gray;
+    border-radius: 20px;
+    padding:5px 10px;
+    font-size: 18px;
+    font-weight: bold;
+    transition: all 0.5s;
+    font-family: 'Roboto Slab', serif;
+}
+.btn-remove-item:hover{
+    box-shadow: 0 0 10px white;
+    transform: scale(1.1,1.1);
+    
+    
+}
+.item-name-style{
+    font-family: 'Architects Daughter', cursive;
+    margin: 10px 0;
+}
+
+.emptyCartBtn{
+    background-color: black;
+    color:red;
+    border:1px solid gray;
+    border-radius: 20px;
+    padding:5px 10px;
+    font-size: 18px;
+    font-weight: bold;
+    transition: all 0.5s;
+    font-family: 'Roboto Slab', serif;
+}
+.emptyCartBtn:hover{
+    box-shadow:0 0 15px red;
+}
+.checkOutCartBtn{
+    background-color: black;
+    
+    border:1px solid gray;
+    border-radius: 20px;
+    padding:5px 10px;
+    font-size: 18px;
+    font-weight: bold;
+    transition: all 0.5s;
+    font-family: 'Roboto Slab', serif;
+}
+.checkOutCartBtn:hover{
+    box-shadow:0 0 15px white;
+}
+
+.postion-fixed{
+    position:sticky;
+    color:black;
+    text-shadow: 0 0 10px black;
+    top:10px;
+    z-index: 5;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: large;
+    text-align: center;
+    background-color: white;
+    border-radius: 50%;
+    height: 70px;
+    width: 70px;
+    /* bottom:200px;*/
+    left:10px; 
+    overflow: hidden;
+    transition: all 0.7s;
+    padding:3px;
+    box-shadow: 0 0 40px black;
+    animation-name: circly;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+@keyframes circly {
+    0%{
+        border:3px solid red;
+        box-shadow: 0 0 40px black;
+    }
+    50%{
+        border:3px solid yellow;
+        box-shadow: 0 0 40px white;
+  
+    }
+    100%{
+        border:3px solid red;
+        box-shadow: 0 0 40px black;
+    }
+    
+}
+.postion-fixed:hover{
+height: 100px;
+width:50%;
+border-radius: 15px;
+margin-bottom: 10px;
+background-color: rgba(0, 0, 0, 0.301);
+color:white;
+
+}
+
+.absolute-checkout{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    background-color: rgba(0, 0, 0, 0.308);
+    text-align: center;
+    color:white;
+    padding:20px;
+    font-family: 'Irish Grover', cursive;
+font-size: 25px;
+
+}
+
+.order-style{
+
+    background-color: rgba(0, 0, 0, 0.315);
+    color:white;
+    border-radius: 10px;
+    box-shadow: 0 0 5px white;
+}
+.goToHomePageBtn{
+    background-color: rgba(255, 0, 0, 0.432);
+    
+    padding:20px;
+    border-radius: 20px;
+    border-color: transparent;
+    box-shadow: 0 0 10px black;
+    font-family: 'Irish Grover', cursive;
+    font-size: large;
+    transition: all 0.5s;
+}
+.goToHomePageBtn:hover{
+    box-shadow: 0 0 10px white;
+    font-style: italic;
+   
+  
+}
+.linkstyle{
+    color:white;
+    
+}
+.linkstyle:hover{
+   color:white;
+    text-decoration: none;
+}
+
+
+
+.fname-class{
+    outline: none;
+    width:100%;
+    font-family:'Aref Ruqaa' , 'Indie Flower' , cursive;
+    font-weight: bold;
+    font-size: 30px;
+    border-radius: 8px;
+}
+.lname-class{
+    outline: none;
+    width:100%;
+    font-family:'Aref Ruqaa' , 'Indie Flower' , cursive;
+    font-weight: bold;
+    font-size: 30px;
+    border-radius: 8px;
+}
+.email-class{
+    outline: none;
+    width:100%;
+    font-family:'Aref Ruqaa' , 'Indie Flower' , cursive;
+    font-weight: bold;
+    font-size: 30px;
+    border-radius: 8px;
+}
+.subject-class{
+    outline: none;
+    width:100%;
+    font-family:'Aref Ruqaa' , 'Indie Flower' , cursive;
+    font-weight: bold;
+    font-size: 30px;
+    border-radius: 8px;
+}
+.fontStyletxt{
+    font-family: 'Indie Flower' , 'Aref Ruqaa' , cursive;
+}
+.textarea{
+    outline: none;
+    width: 100%;
+    height: 300px;
+    font-family:'Aref Ruqaa' , 'Indie Flower' , cursive;
+    font-weight: bold;
+    font-size: 30px;
+    border-radius: 8px;
+}
+
+
+.flex-social-media{
+    display: flex;
+    justify-content: space-around;
+    background-color: black;
+    border-radius: 15px;
+    
+}.left{
+    background-color: rgba(0, 0, 0, 0.349);
+    color:white;
+}
+.right{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.349);
+    color:white;
+    text-shadow: 0 0 10px black;
+}
+
+.submitbtn{
+    padding:5px 25px;
+    background-color: maroon;
+    color:white;
+    margin: 15px 0;
+    
+}
+
+.submitbtn:hover{
+box-shadow: 0 0 10px white;
+
+}
+
+.flexe-boxe-submit{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+}
+.margin-Left-send-message{
+    margin-left:30px;
+    font-size:16px;
+    border-radius: 10px;
+    text-shadow: 0 0 10px black;
+    
+}
+@media screen and (max-width:346px){
+    .margin-Left-send-message{
+        font-size:12px;
+    }
+}
+@media screen and (min-width:346px){
+    .margin-Left-send-message{
+        font-size:14px;
+    }
+}
+
+
+.errorText{
+    background-color: red;
+    color:black;
+    font-size: 25px;
+    margin-top:10px;
+    font-family:'Times New Roman', Times, serif;
+    text-shadow: 0 0 10px black;
+}
+
+
+
+.inputtextlaststep{
+    display: block;
+    
+    width:50%;
+    height: 40px;
+    margin: auto;
+    margin-bottom: 20px;
+    border-radius: 20px;
+}
+.inputtextlaststep::placeholder{
+    background-color: maroon;
+    color:white;
+    padding-left: 30px;
+    
+    
+}
+
+.errormsg{
+    color:white;
+    background-color: rgba(255, 0, 0, 0.712);
+    width: 75%;
+    text-align: center;
+    margin:auto;
+    margin-bottom: 30px;
+    padding:10px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px white;
+    text-shadow: 0 0 10px black;
+}
+.ok{
+    background-color: green;
+    color:white;
+    width: 75%;
+    text-align: center;
+    margin:auto;
+    margin-bottom: 30px;
+    padding:10px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px white;
+    text-shadow: 0 0 10px black;
+}
+
+.cart-fixed{
+    position: fixed;
+    right:70px;
+    bottom: 75px;
+    width:60px;
+    height: 60px;
+    background-color: rgba(255, 255, 0, 0.623);
+    border:3px solid maroon;
+    z-index: 16;
+    border-radius: 50%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    transition: all 0.3s;
+}
+
+.cart-fixed:hover{
+    transform: scale(1.2,1.2);
+}
+@media screen and (max-width:500px) {
+    .cart-fixed{
+    position: fixed;
+    right:5px;
+    bottom: 8px;
+    width:60px;
+    height: 60px;
+    background-color: rgba(255, 255, 0, 0.623);
+    border:3px solid maroon;
+    z-index: 16;
+    border-radius: 50%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+}
+}
+
+
+
+
+.hoverOnMakeOrder:hover{
+    box-shadow: 0 0 10px white;
+    font-style: italic;
+}
+/* لحذف النقاط اسفل تاج ال abbr */
+
+/* abbr[title] {
+    border-bottom: none !important;
+    cursor: inherit !important;
+    text-decoration: none !important;
+  } */
+
+  .checkGegevens{
+      font-size: 20px;
+      font-weight: bold;
+  }
+
+  /* .flexBox-Section:hover{
+   
+    
+  } */
+
+  .backgroundColor-paragraph{
+      color:white;
+      background-color: rgba(0, 0, 0, 0.329);
+      border-radius: 10px;
+      border:3px solid white;
+      margin:40px;
+      line-height: 2;
+      text-shadow: 0 0 10px black;
+      font-family: 'Irish Grover', cursive;
+    font-size: 20px;
+    
+  }
+  .backgroundColor-paragraph:hover{
+    box-shadow: 0 0 30px white;
+  }
+
+  .image-1{
+      background-image: url("/src/imagesRestaurant/restaurant1.jpg");
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+  }
+  .image-2{
+    background-image: url("/src/imagesRestaurant/restaurant2.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.image-3{
+    background-image: url("/src/imagesRestaurant/restaurant3.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.video-style{
+    width:100%;
+    
+    border:3px solid white;
+    border-radius:10px;
+    border-color:white;
+    background-color:black;
+    
+}
+
+@media screen and (min-width:320px) {
+    .video-style{
+        height: 250px;
+    }
+}
+.shadow-divs{
+    box-shadow: 5px 5px 10px black;
+    padding:20px;
+    border-radius: 10px;
+   
+}
+/* .shadow-divs:hover{
+    box-shadow: 10px 10px 10px white;
+} */
+.paragraphWithImages{
+    color:yellow;
+    text-shadow: 0 0 10px black;
+    margin-top: 10px;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 20px;
+    background-color: rgba(0, 0, 0, 0.288);
+}
+
+input:focus,button:focus{
+    outline: none;
+}
+
+@media screen and (min-width:320px){
+    .styleFont{
+        color:maroon;
+        font-size: 18px;
+        
+        background-color: rgba(255, 255, 255, 0.562);
+        padding:20px;
+        border-radius: 15px 50px;
+        box-shadow: 0 0 20px maroon;
+        text-shadow: 0 0 5px white;
+        font-family: 'Fruktur', cursive;
+    }
+    
+    .height{
+        height: 300px;
+    }
+    .p-choosing-meat-fish{
+        text-align: center;
+        box-shadow: 0 0 10px black;
+        padding: 10px;
+        border-radius: 15px 50px;
+        font-family: 'Irish Grover', cursive;
+        font-size: 20px;
+    }
+   
+    .paragraf-text-choosing-meat-fish{
+        font-family: 'Irish Grover', cursive;
+        
+    }
+}
+
+
+
+.changePosition{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+.size-size-font{
+    text-align: center;
+    box-shadow: 0 0 10px black;
+    padding: 10px;
+    border-radius: 15px 50px;
+    font-family: 'Irish Grover', cursive;
+    
+}
+@media screen and (max-width:550px){
+    .size-size-font{
+        font-size:25px;
+    } 
+}
+@media screen and (max-width:400px) {
+    .hideStarstitle{
+        display: none;
+    }
+}
+@media screen and (max-width:767px){
+    .changePosition{
+        position: relative;
+    }
+
+    .styleError{
+        display: none;
+    }
+
+    .styleErrorbutton{
+        display: block;
+    }
+}
+@media screen and (min-width:768px){
+  
+
+    .styleError{
+        display: block;
+    }
+
+    .styleErrorbutton{
+        display: none;
+    }
+}
+@media screen and (max-width:400px){
+    .DayStatus{
+        left:-15px;
+        font-size: 15px;
+    }
+    .DayStatusFriday{
+        left:-15px;
+        font-size: 15px;
+    }
+}
+
+
+@media screen and (max-width:405px){
+
+.zoomIn-img{
+    width:310px;
+}
+
+}
+@media screen and (max-width:474px){
+    .postion-fixed:hover{
+        width:90%;
+    }
+}
+
+@media screen and (max-width:575px) {
+    .inputtextlaststep{
+        width:100%
+    }
+}
+
+/* margin btns navbar */
+@media screen and (max-width:991px){
+    .nav-item{
+        margin:10px 0;
+    }
+    
+}
+@media screen and (min-width:768px){
+    .styleFont{
+        color:maroon;
+        font-size: 28px;
+        
+        background-color: rgba(255, 255, 255, 0.562);
+        padding:20px;
+        border-radius: 15px 50px;
+        box-shadow: 0 0 20px maroon;
+        text-shadow: 0 0 5px white;
+        font-family: 'Fruktur', cursive;
+    }
+    
+    .height{
+        height: 400px;
+    }
+    .p-choosing-meat-fish{
+        text-align: center;
+        box-shadow: 0 0 10px black;
+        padding: 10px;
+        border-radius: 15px 50px;
+        font-family: 'Irish Grover', cursive;
+        font-size: 25px;
+    }
+    .paragraf-text-choosing-meat-fish{
+        font-family: 'Irish Grover', cursive;
+        font-size: 20px;
+        
+    }
+}
+
+@media screen and (min-width:992px){
+    .styleFont{
+        color:maroon;
+        font-size: 38px;
+        
+        background-color: rgba(255, 255, 255, 0.562);
+        padding:20px;
+        border-radius: 15px 50px;
+        box-shadow: 0 0 20px maroon;
+        text-shadow: 0 0 5px white;
+        font-family: 'Fruktur', cursive;
+    }
+    
+    .height{
+        height: 500px;
+    }
+    .p-choosing-meat-fish{
+        text-align: center;
+        box-shadow: 0 0 10px black;
+        padding: 10px;
+        border-radius: 15px 50px;
+        font-family: 'Irish Grover', cursive;
+        font-size: 30px;
+    }
+    .paragraf-text-choosing-meat-fish{
+        font-family: 'Irish Grover', cursive;
+        font-size: 25px;
+        
+    }
+}
+
+
+@media screen and (min-width:1200px){
+    .styleFont{
+        color:maroon;
+        font-size: 48px;
+        
+        background-color: rgba(255, 255, 255, 0.562);
+        padding:20px;
+        border-radius: 15px 50px;
+        box-shadow: 0 0 20px maroon;
+        text-shadow: 0 0 5px white;
+        font-family: 'Fruktur', cursive;
+    }
+    
+    .height{
+        height: 950px;
+       
+    }
+    .p-choosing-meat-fish{
+        text-align: center;
+        box-shadow: 0 0 10px black;
+        padding: 10px;
+        border-radius: 15px 50px;
+        font-family: 'Irish Grover', cursive;
+        font-size: 35px;
+    }
+    .paragraf-text-choosing-meat-fish{
+        font-family: 'Irish Grover', cursive;
+        font-size: 30px;
+        
+    }
+   
+}
+
+
+@media screen and (max-width:767px){ 
+    .right{
+        margin-top: 20px;
+        padding:20px
+    }
+    .margin-top{
+        margin-top: 20px;
+    }
+}
+
+
+@media screen and (max-width:340px) {
+    .hideStars{
+        display: none;
+    }
+}
